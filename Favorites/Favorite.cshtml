@@ -1,0 +1,7 @@
+<h2>Your Favorite Books</h2>
+<ul>
+    @foreach (var book in Model)
+    {
+        <li>@book.Title by @book.Author</li>
+    }
+</ul>
