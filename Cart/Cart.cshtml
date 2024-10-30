@@ -1,0 +1,30 @@
+<form asp-action="Checkout">
+    <div>
+        <label>Title</label>
+        <input asp-for="Title" readonly />
+    </div>
+    <div>
+        <label>Author</label>
+        <input asp-for="Author" readonly />
+    </div>
+    <div>
+        <label>Genre</label>
+        <input asp-for="Genre" readonly />
+    </div>
+    <div>
+        <label>Publication Year</label>
+        <input asp-for="PublicationYear" type="number" readonly />
+    </div>
+    <div>
+        <label>Quantity</label>
+        <input asp-for="Quantity" type="number" min="1" />
+    </div>
+    <div>
+        <label>Price</label>
+        <input asp-for="Price" type="text" readonly />
+    </div>
+    <button type="submit">Checkout</button>
+    <button type="button" onclick="window.location.href='/Books/AddBook';">Continue Shopping</button>
+    <button type="submit" formaction="/Cart/RemoveBook">Remove Book</button>
+</form>
+
